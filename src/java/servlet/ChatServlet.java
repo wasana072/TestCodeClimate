@@ -60,13 +60,13 @@ public class ChatServlet extends HttpServlet {
             responseTexts.add(responseTextSimple);
 
             // send sendText to ChatGPT
-            ChatGPT chatGPT = new ChatGPT();
-            chatGPT.setSentText(sendText);
-            chatGPT.chat(chatVisitor);
-            ResponseText responseTextGPT = new ResponseText();
-            responseTextGPT.setLogo(chatGPT.getLogo());
-            responseTextGPT.setResponseText(chatGPT.getResponse());
-            responseTexts.add(responseTextGPT);
+//            ChatGPT chatGPT = new ChatGPT();
+//            chatGPT.setSentText(sendText);
+//            chatGPT.chat(chatVisitor);
+//            ResponseText responseTextGPT = new ResponseText();
+//            responseTextGPT.setLogo(chatGPT.getLogo());
+//            responseTextGPT.setResponseText(chatGPT.getResponse());
+//            responseTexts.add(responseTextGPT);
 
             // send sendText to ChatOther
             ChatOther chatOther = new ChatOther();
